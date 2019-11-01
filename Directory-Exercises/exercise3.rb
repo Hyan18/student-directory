@@ -24,7 +24,8 @@ end
 
 def print(students)
   students.each do |student|
-    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+    # only print the students whose name is shorter than 12 characters
+    puts "#{student[:name]} (#{student[:cohort]} cohort)" if student[:name].length < 12
   end
 end
 

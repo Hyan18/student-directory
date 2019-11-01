@@ -35,5 +35,5 @@ end
 students = input_students
 # nothing happens until we call the methods
 print_header
-print(students)
+print(students) if students.count > 0 # only print if there is at least one student
 print_footer(students)
